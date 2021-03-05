@@ -13,8 +13,9 @@ spring:
 #    username: root
 #    password: Rivamed@2018
 #    链接Mysql数据库
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver #Loading class `com.mysql.jdbc.Driver'. This is deprecated反对. The new driver class is `com.mysql.cj.jdbc.Driver'
     url: jdbc:mysql://192.168.10.131:3306/test?serverTimezone=UTC
     username: root
     password: Rivamed@2018
-
+#     使用druid数据源
+#    type: com.alibaba.druid.pool.DruidDataSource
