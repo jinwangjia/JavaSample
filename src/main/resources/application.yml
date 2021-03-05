@@ -5,15 +5,15 @@ server.port: 8080
 # SQL Server数据库
 spring:
   datasource:
+#    链接H2数据库
 #    driver-class-name: org.h2.Driver
 #    schema: classpath:db/schema-h2.sql
 #    data: classpath:db/data-h2.sql
 #    url: jdbc:h2:mem:test
 #    username: root
 #    password: Rivamed@2018
+#    链接Mysql数据库
     driver-class-name: com.mysql.cj.jdbc.Driver
-    schema: classpath:db/schema-h2.sql
-    data: classpath:db/data-h2.sql
     url: jdbc:mysql://192.168.10.131:3306/test?serverTimezone=UTC
     username: root
     password: Rivamed@2018
