@@ -3,6 +3,8 @@ spring.application.name: demo
 # 应用服务 WEB 访问端口
 server.port: 8080
 # SQL Server数据库
+
+#MySql数据库
 spring:
   datasource:
 #    链接H2数据库
@@ -19,3 +21,7 @@ spring:
     password: Rivamed@2018
 #     使用druid数据源
 #    type: com.alibaba.druid.pool.DruidDataSource
+#  想要查看执行的 sql 语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
