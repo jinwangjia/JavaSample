@@ -135,4 +135,10 @@ public class SampleTest {
         System.out.println(update);
     }
 
+    @Test
+    public  void  selectByUserId(){
+        User user = userMapper.selectByUserId(1);
+        System.out.println(user.getName());
+    }
+
 }
